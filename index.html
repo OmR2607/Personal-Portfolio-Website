@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" width="000px" height="150px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Om</span></h1>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me <br></h1>
+                    <p>
+                        Hi there! I'm Om Retharekar, a passionate and driven second-year Computer Science student
+                        specializing in full stack development. My journey into the world of coding began with a
+                        curiosity for how things work behind the scenes and has since evolved into a full-fledged
+                        passion for building intuitive and dynamic web applications. <br><br>
+                        Currently, I'm pursuing a Bachelor's degree in Computer Science from Mumbai University. My
+                        coursework has provided me with a solid foundation in both front-end and back-end technologies,
+                        and I'm eager to put my skills into practice. <br><br>
+                        I have hands-on experience with a variety of programming languages and frameworks, including:
+                        HTML,CSS,JavaScript and C language.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Design</span><br>All types of designing are done</li>
+                            <li><span>UI/UX Design</span><br>All types of designing are done</li>
+                            <li><span>App Design</span><br>All types of designing are done</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025</span><br>Internship at Google</li>
+                            <li><span>2023</span><br>Internship at Microsoft</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025 </span><br>Yeshwantrao Bhonsale Institute of Technology(B.E.(CSE))</li>
+                            <li><span>2023</span><br>Dadar Pionner College(HSC)</li>
+                            <li><span>2021</span><br>Diamond Jubilee High School(ICSE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------skills ---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>C language</h2>
+                    <img src="https://e7.pngegg.com/pngimages/520/669/png-clipart-c-logo-c-programming-language-computer-icons-computer-programming-programming-miscellaneous-blue.png" alt="" width="60" height="60">
+                    
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Java</h2>
+                    <img src="https://logos-download.com/wp-content/uploads/2016/10/Java_logo_icon.png" alt="" width="90" height="60">
+                    
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>HTML</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="" width="60" height="60">
+                    
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Bootstrap</h2>
+                    <img src="https://ehaboo.github.io/my-resume/assets/images/Bootstrap-img.png" alt="" width="70" height="60">
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Clothing Website</h3>
+                        <p>It is a superb combination of all the latest trends and styles. Check it out now now.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Subject Calculation</h3>
+                        <p>
+                            Just by entering the marks this program will give a detailed pie chart along with the aggregates.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Discount Calculator</h3>
+                        <p>
+                            This Program provides all the discount rates which can be used by all brands.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                   
+                    <p><h3>Email</h3><i class="fas fa-paper-plane"></i> omretharekar@gmail.com</p>
+                    <p><h3>Phone no.</h3><i class="fas fa-phone-square-alt"></i>+91 7304722064</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/om.retharekar.1/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/the_omretharekar/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/om-retharekar-b760b1344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Om.All rights reserved</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = '< add you own link here >' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
